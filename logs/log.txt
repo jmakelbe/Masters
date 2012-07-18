@@ -16,3 +16,1413 @@ Accuracy: 0.991250
 Comment: 
 5 Actors
 ----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 02:48:37
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 02:48:44
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.992500 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 02:51:15
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 02:51:21
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.983750 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 02:51:53
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 02:51:59
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.996250 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 03:10:50
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 03:10:55
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.980000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 03:14:36
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 03:14:38
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 03:15:15
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 03:15:19
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.981250 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 03:15:33
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 03:15:37
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.982500 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 03:15:48
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 03:15:50
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 03:23:08
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 03:23:10
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 03:26:05
+ Data Size: 3000 x 0275
+ End Time: 18-07-2012 03:26:11
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:10:30
+ Data Size: 0002 x 0600
+ End Time: 18-07-2012 04:10:37
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.985000
+ Actor 1: 0.750000
+
+Comment: 
+2 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:10:58
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:11:01
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.980000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:11:45
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:11:47
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:16:49
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:16:51
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:16:59
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:17:02
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.980000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:20:01
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:20:04
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.980000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:20:54
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:20:57
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.980000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:21:28
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:21:31
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.980000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:21:47
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:21:50
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.980000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:23:57
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:24:00
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:24:15
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:24:18
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.980000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:26:05
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:26:08
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.980000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:26:12
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:26:14
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:44:23
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:44:26
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.980000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:46:36
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:46:39
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:46:56
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:46:58
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:49:38
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:49:40
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 1.000000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:50:08
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:50:10
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.500000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:50:40
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:50:42
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.500000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:53:32
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 04:53:36
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.550000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:54:25
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:54:27
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.500000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:54:42
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 04:54:49
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.760000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:54:58
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:55:00
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.500000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 04:57:01
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 04:57:03
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.500000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:06:57
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 05:06:58
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.500000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:09:07
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 05:09:14
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.753750 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:10:00
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 05:10:08
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.523750 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:10:51
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 05:10:58
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.523750 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:11:34
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 05:11:36
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.500000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:11:43
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 05:11:49
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.790000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:11:59
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 05:12:06
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.523750 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:13:14
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 05:13:21
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.768750 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:13:38
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 05:13:40
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.500000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:31:02
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 05:31:08
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.788333 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:32:03
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 05:32:08
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.786667 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:33:03
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 05:33:06
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:34:42
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 05:34:45
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.550000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:42:00
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 05:42:03
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:47:25
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 05:47:27
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.500000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:49:05
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 05:49:08
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:49:34
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 05:49:36
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.510000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 05:57:19
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 05:57:21
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.500000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:04:20
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 06:04:23
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:05:00
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 06:05:03
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.490000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:05:30
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 06:05:33
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:05:53
+ Data Size: 0005 x 0600
+ End Time: 18-07-2012 06:07:01
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.740000
+ Actor 1: 0.720000
+ Actor 2: 0.860000
+ Actor 3: 0.780000
+ Actor 4: 0.770000
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:14:27
+ Data Size: 0005 x 0600
+ End Time: 18-07-2012 06:15:34
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.740000
+ Actor 1: 0.720000
+ Actor 2: 0.860000
+ Actor 3: 0.780000
+ Actor 4: 0.770000
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:19:39
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 06:19:42
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:19:52
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 06:19:55
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:20:57
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 06:21:00
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:21:03
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 06:21:06
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:22:09
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 06:22:12
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:22:17
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 06:22:20
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:23:32
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 06:23:35
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:23:46
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 06:23:49
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:25:45
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 06:25:48
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 06:25:56
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 06:25:59
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:23:25
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 07:23:28
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:23:52
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 07:23:55
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:24:39
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 07:24:43
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:25:04
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 07:25:07
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:26:05
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 07:26:08
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:26:50
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 07:26:53
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:27:58
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 07:28:01
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.755000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:28:20
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 07:28:23
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.725000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:30:26
+ Data Size: 0600 x 0275
+ End Time: 18-07-2012 07:30:29
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.725000 
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:33:24
+ Data Size: 0001 x 0600
+ End Time: 18-07-2012 07:33:27
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.730000
+
+Comment: 
+1 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:33:50
+ Data Size: 0005 x 0600
+ End Time: 18-07-2012 07:35:05
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.745000
+ Actor 1: 0.730000
+ Actor 2: 0.830000
+ Actor 3: 0.800000
+ Actor 4: 0.790000
+
+Comment: 
+5 Actors
+----------------------------------------------
+Simple Logistic Regression
+ Start time: 18-07-2012 07:41:05
+ Data Size: 0005 x 0600
+ End Time: 18-07-2012 07:42:24
+ Parameters:
+    iterations: 4000 
+    regularisation1: 10.000000 
+    regularisation2: 10.000000 
+    threshold: 1.000000e+01 
+    payload: 0.050000 
+
+Accuracies:
+ Actor 0: 0.745000
+ Actor 1: 0.730000
+ Actor 2: 0.830000
+ Actor 3: 0.800000
+ Actor 4: 0.790000
+
+Comment: 
+5 Actors
+----------------------------------------------

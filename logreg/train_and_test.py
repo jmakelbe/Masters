@@ -1,21 +1,5 @@
 #!/usr/bin/python
 
-"""
-Machine Learning Practical 3: train_and_test.py
-
-usage: python experiment1.py [option]
-Options and arguments:
-  -h, --help                         : print this help message
-  -i, --iterations=arg               : max number of training iterations
-  -n, --eta=arg                      : eta step size parameter in 
-                                       gradient descent
-  -t, --threshold=arg                : gradient tolerance termination 
-                                       parameter for BFGS
-  -r, --regularisation-parameter=arg : Gaussian sigma^2 parameter in the 
-                                       logistic regression MAP objective
-  -b, --bfgs                         : Use the BFGS quasi-newton optimisation
-                                       algorithm instead of gradient descent
-"""
 import sys, getopt
 import numpy as np
 import scipy.optimize as op
@@ -23,9 +7,14 @@ import datetime
 
 from logreg import *
 from util import *
-
-homePath = '/Users/July/github/local/Masters/'
+#logreg
+homePath = '/Users/July/Documents/Dropbox/OxfordMSc/Thesis/code/'
 #homePath = '/cluster/julie/code/'
+
+actors = 1
+
+crossvalid = False
+regular = False
 
 # These three functions are helpers for the BFGS optimiser
 last_func=0
@@ -34,11 +23,16 @@ array_of_means=0
 array_of_std=0
 def function(w, x, t, r): 
   global last_func
-  last_func = sum(objective(x,t,w)) + log_prior(w, r)
+  last_func = sum(objective(x,t,w))
+  if regular:
+    last_func = last_func + log_prior(w, r)
   return last_func
 
-def function_grad(w, x, t, r): 
-  return grad(x,t,w)+prior_grad(w, r) 
+def function_grad(w, x, t, r):
+  res = grad(x, t, w)
+  if regular:
+    res = res + prior_grad(w, r)
+  return res
 
 def report(w):
   global last_func
@@ -102,10 +96,10 @@ def getTrainingDataFB():
 # read the data
   coverdata = concat("fb4m-500-cover", False)
   stegdata = concat("fb4m-500-stego-0.05", False)
-  hundreds = np.ones(400)
-  hundreds = np.multiply(hundreds, 100)
-  coverdata[:,0] = np.zeros(400)
-  stegdata[:,0]=hundreds
+  #hundreds = np.ones(400)
+  #hundreds = np.multiply(hundreds, 100)
+  #coverdata[:,0] = np.zeros(400)
+  #stegdata[:,0]=hundreds
   coverdata = addLabels(coverdata, False)
   stegdata = addLabels(stegdata, True)
   data = np.append(coverdata, stegdata, axis=0)
@@ -115,10 +109,10 @@ def getTrainingDataFB():
 def getTestDataFB():
   test_coverdata= concat("fb4m-500-cover", True)
   test_stegdata = concat("fb4m-500-stego-0.05", True)
-  hundreds = np.ones(400)
-  hundreds = np.multiply(hundreds, 100)
-  coverdata[:,0] = np.zeros(400)
-  stegdata[:,0]=hundreds
+  #hundreds = np.ones(400)
+  #hundreds = np.multiply(hundreds, 100)
+  #coverdata[:,0] = np.zeros(400)
+  #stegdata[:,0]=hundreds
   test_coverdata = addLabels(test_coverdata, False)
   test_stegdata = addLabels(test_stegdata, True)
 
@@ -132,18 +126,26 @@ def concat(folder, test):
     path = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":folder, "num":actor}
     data = np.genfromtxt(path, delimiter=' ')
     if test:
-      data = data[401:, :]
+      data = data[300:400, :]
     else:
-      data = data[:400, :]
+      data = data[:300, :]
     full = np.append(full, data[:,:-1], axis=0)
   return full
 
-def normalize(data):
-  means = np.mean(data, axis = 0)
-  var = np.std(data, axis = 0)
-  res = np.subtract(data, means)
-  res = np.divide(res, var)
-  return res
+def getOncActorTrainData():
+  coverpath = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":"fb4m-500-cover", "num":1}
+  coverdata = np.genfromtxt(coverpath, delimiter=' ')
+  coverdata = coverdata[:300, :-1]
+
+  stegpath = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":"fb4m-500-stego-0.05", "num":1}
+  stegdata = np.genfromtxt(stegpath, delimiter=' ')
+  stegdata = stegdata[:300, :-1]
+
+  coverdata = addLabels(coverdata, False)
+  stegdata = addLabels(stegdata, True)
+
+  return np.append(coverdata, stegdata, axis = 0)
+
 
 def Train(data, iters, eta, threshold, regularisation, cross, bfgs, payload):
   N, K = data.shape
@@ -179,7 +181,6 @@ def Train(data, iters, eta, threshold, regularisation, cross, bfgs, payload):
         print '   iteration', i, ': cross entropy=', function(w, x, t, regularisation)
 
   print 'Final cross entropy', sum(objective(x, t, w))
-  print w
   return w
 
 def Test(data, w):
@@ -188,6 +189,7 @@ def Test(data, w):
   K = K-D-1
   xtest = data[:,-K:]
   xtest = normalize(xtest)
+  print xtest
   ttest = data[:,D]
   res = 0.0
   total = 0.0
@@ -246,14 +248,20 @@ def experiment(iters, eta, threshold, regularisation, cross, bfgs, payload):
   #comment = raw_input("What is the comment for this experiment?\n")
   comment = "5 Actors"
   start = datetime.datetime.now()
-  data = getTrainingDataFB()
-  np.random.shuffle(data)
-  np.random.shuffle(data)
-  np.random.shuffle(data)
-  np.random.shuffle(data)
-  np.random.shuffle(data)
   accuracy=0.0
-  accuracy+=crossvalidate(iters, eta, threshold, regularisation, cross, bfgs, payload, data)
+  if crossvalid:
+    data = getTrainingDataFB()
+    np.random.shuffle(data)
+    np.random.shuffle(data)
+    np.random.shuffle(data)
+    np.random.shuffle(data)
+    np.random.shuffle(data)
+    accuracy+=crossvalidate(iters, eta, threshold, regularisation, cross, bfgs, payload, data)    
+  else:
+    data = getOncActorTrainData()
+    testdata = getTestDataFB()
+    w = Train(data, iters, eta, threshold, regularisation, cross, bfgs, payload)
+    accuracy = accuracy + Test(testdata, w)
   end = datetime.datetime.now()
   logResults(start, data.shape, accuracy, end, comment, iters, eta, threshold, regularisation, cross, bfgs, payload)
   return accuracy

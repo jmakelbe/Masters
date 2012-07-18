@@ -1,7 +1,6 @@
 import sys
 import numpy as np
 import scipy.optimize as op
-import util
 
 def sigmoid(z):
     return 1 / (1 + np.exp(-z))
