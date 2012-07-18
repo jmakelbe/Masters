@@ -1,0 +1,18 @@
+Simple Logistic Regression
+ Start time: 18-07-2012 02:30:40
+ Data Size: 0800 x 0275
+ End Time: 18-07-2012 02:30:45
+ Parameters:
+    iterations: 4000 
+    eta: 1.000000e-11 
+    regularisation: 100000000000000000000.000000 
+    threshold: 1.000000e+01 
+    bfgs: 1 
+    cross: 4 
+    payload: 0.050000 
+
+Accuracy: 0.991250 
+
+Comment: 
+5 Actors
+----------------------------------------------

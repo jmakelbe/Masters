@@ -1,0 +1,251 @@
+Train: w
+(468814,)
+Optimising with BFGS:
+Traceback (most recent call last):
+  File "./train_and_test.py", line 167, in <module>
+    experiment(2000, 1e1, 1, 1)
+  File "./train_and_test.py", line 161, in experiment
+    myw = Train(data, regularisation1, regularisation2, iters, threshold)
+  File "./train_and_test.py", line 100, in Train
+    gtol=threshold)
+  File "/usr/lib/python2.6/dist-packages/scipy/optimize/optimize.py", line 708, in fmin_bfgs
+    I = numpy.eye(N,dtype=int)
+  File "/usr/lib/python2.6/dist-packages/numpy/lib/twodim_base.py", line 199, in eye
+    m = equal(subtract.outer(arange(N), arange(M)),-k)
+MemoryError
+Train: w
+(137000,)
+Optimising with BFGS:
+Traceback (most recent call last):
+  File "./train_and_test.py", line 167, in <module>
+    experiment(2000, 1e1, 1, 1)
+  File "./train_and_test.py", line 161, in experiment
+    myw = Train(data, regularisation1, regularisation2, iters, threshold)
+  File "./train_and_test.py", line 100, in Train
+    gtol=threshold)
+  File "/usr/lib/python2.6/dist-packages/scipy/optimize/optimize.py", line 708, in fmin_bfgs
+    I = numpy.eye(N,dtype=int)
+  File "/usr/lib/python2.6/dist-packages/numpy/lib/twodim_base.py", line 199, in eye
+    m = equal(subtract.outer(arange(N), arange(M)),-k)
+MemoryError
+Train: w
+(2740,)
+Optimising with BFGS:
+   iteration 0 : cross entropy= 3986.51503148
+   iteration 10 : cross entropy= 2981.0117353
+   iteration 20 : cross entropy= 2244.1169008
+   iteration 30 : cross entropy= 1815.20009416
+   iteration 40 : cross entropy= 1386.38101756
+   iteration 50 : cross entropy= 994.048671565
+   iteration 60 : cross entropy= 677.610234176
+   iteration 70 : cross entropy= 425.010728305
+Optimization terminated successfully.
+         Current function value: 316.703937
+         Iterations: 77
+         Function evaluations: 81
+         Gradient evaluations: 81
+Final cross entropy 282.179394376
+Accuracy:  0.52
+Actor 0 result: 0.520000
+Accuracy:  0.51
+Actor 1 result: 0.510000
+Accuracy:  0.52
+Actor 2 result: 0.520000
+Accuracy:  0.675
+Actor 3 result: 0.675000
+Accuracy:  0.625
+Actor 4 result: 0.625000
+Accuracy:  0.51
+Actor 5 result: 0.510000
+Accuracy:  0.655
+Actor 6 result: 0.655000
+Accuracy:  0.625
+Actor 7 result: 0.625000
+Accuracy:  0.71
+Actor 8 result: 0.710000
+Accuracy:  0.605
+Actor 9 result: 0.605000
+Total: 0.595500
+Train: w
+(4110,)
+Optimising with BFGS:
+   iteration 0 : cross entropy= 5959.81318345
+   iteration 10 : cross entropy= 4446.37587654
+   iteration 20 : cross entropy= 3569.08369391
+   iteration 30 : cross entropy= 3061.31359892
+   iteration 40 : cross entropy= 2600.21389161
+   iteration 50 : cross entropy= 2093.60557968
+   iteration 60 : cross entropy= 1624.40199534
+   iteration 70 : cross entropy= 1234.01567567
+   iteration 80 : cross entropy= 925.877528042
+   iteration 90 : cross entropy= 658.174494346
+Optimization terminated successfully.
+         Current function value: 541.276027
+         Iterations: 98
+         Function evaluations: 101
+         Gradient evaluations: 101
+Final cross entropy 467.448518554
+Accuracy:  0.525
+Actor 0 result: 0.525000
+Accuracy:  0.51
+Actor 1 result: 0.510000
+Accuracy:  0.52
+Actor 2 result: 0.520000
+Accuracy:  0.685
+Actor 3 result: 0.685000
+Accuracy:  0.62
+Actor 4 result: 0.620000
+Accuracy:  0.51
+Actor 5 result: 0.510000
+Accuracy:  0.655
+Actor 6 result: 0.655000
+Accuracy:  0.615
+Actor 7 result: 0.615000
+Accuracy:  0.705
+Actor 8 result: 0.705000
+Accuracy:  0.555
+Actor 9 result: 0.555000
+Accuracy:  0.5
+Actor 10 result: 0.500000
+Accuracy:  0.545
+Actor 11 result: 0.545000
+Accuracy:  0.635
+Actor 12 result: 0.635000
+Accuracy:  0.625
+Actor 13 result: 0.625000
+Accuracy:  0.51
+Actor 14 result: 0.510000
+Total: 0.581000
+Train: w
+(5480,)
+Optimising with BFGS:
+   iteration 0 : cross entropy= 8028.5824523
+   iteration 10 : cross entropy= 5749.47322158
+   iteration 20 : cross entropy= 4591.03747628
+   iteration 30 : cross entropy= 3929.86559209
+   iteration 40 : cross entropy= 3371.06682706
+   iteration 50 : cross entropy= 2767.23744692
+   iteration 60 : cross entropy= 2239.89301162
+   iteration 70 : cross entropy= 1730.66066197
+   iteration 80 : cross entropy= 1329.53161288
+   iteration 90 : cross entropy= 1005.26089383
+   iteration 100 : cross entropy= 734.069301341
+Optimization terminated successfully.
+         Current function value: 693.286594
+         Iterations: 103
+         Function evaluations: 106
+         Gradient evaluations: 106
+Final cross entropy 613.12676279
+Accuracy:  0.52
+Actor 0 result: 0.520000
+Accuracy:  0.51
+Actor 1 result: 0.510000
+Accuracy:  0.52
+Actor 2 result: 0.520000
+Accuracy:  0.675
+Actor 3 result: 0.675000
+Accuracy:  0.625
+Actor 4 result: 0.625000
+Accuracy:  0.515
+Actor 5 result: 0.515000
+Accuracy:  0.63
+Actor 6 result: 0.630000
+Accuracy:  0.62
+Actor 7 result: 0.620000
+Accuracy:  0.71
+Actor 8 result: 0.710000
+Accuracy:  0.605
+Actor 9 result: 0.605000
+Accuracy:  0.5
+Actor 10 result: 0.500000
+Accuracy:  0.55
+Actor 11 result: 0.550000
+Accuracy:  0.65
+Actor 12 result: 0.650000
+Accuracy:  0.63
+Actor 13 result: 0.630000
+Accuracy:  0.52
+Actor 14 result: 0.520000
+Accuracy:  0.545
+Actor 15 result: 0.545000
+Accuracy:  0.665
+Actor 16 result: 0.665000
+Accuracy:  0.55
+Actor 17 result: 0.550000
+Accuracy:  0.54
+Actor 18 result: 0.540000
+Accuracy:  0.565
+Actor 19 result: 0.565000
+Total: 0.582250
+Train: w
+(6850,)
+Optimising with BFGS:
+   iteration 0 : cross entropy= 9966.99078833
+   iteration 10 : cross entropy= 6923.81493081
+   iteration 20 : cross entropy= 5687.61603504
+   iteration 30 : cross entropy= 4844.88162109
+   iteration 40 : cross entropy= 4264.954296
+   iteration 50 : cross entropy= 3744.22391243
+   iteration 60 : cross entropy= 3183.89948187
+   iteration 70 : cross entropy= 2621.85395918
+   iteration 80 : cross entropy= 2057.47149983
+   iteration 90 : cross entropy= 1563.56926508
+   iteration 100 : cross entropy= 1136.43220245
+   iteration 110 : cross entropy= 776.871472589
+Optimization terminated successfully.
+         Current function value: 720.075290
+         Iterations: 113
+         Function evaluations: 116
+         Gradient evaluations: 116
+Final cross entropy 603.280822838
+Accuracy:  0.53
+Actor 0 result: 0.530000
+Accuracy:  0.51
+Actor 1 result: 0.510000
+Accuracy:  0.52
+Actor 2 result: 0.520000
+Accuracy:  0.67
+Actor 3 result: 0.670000
+Accuracy:  0.625
+Actor 4 result: 0.625000
+Accuracy:  0.51
+Actor 5 result: 0.510000
+Accuracy:  0.65
+Actor 6 result: 0.650000
+Accuracy:  0.61
+Actor 7 result: 0.610000
+Accuracy:  0.7
+Actor 8 result: 0.700000
+Accuracy:  0.6
+Actor 9 result: 0.600000
+Accuracy:  0.5
+Actor 10 result: 0.500000
+Accuracy:  0.54
+Actor 11 result: 0.540000
+Accuracy:  0.655
+Actor 12 result: 0.655000
+Accuracy:  0.63
+Actor 13 result: 0.630000
+Accuracy:  0.52
+Actor 14 result: 0.520000
+Accuracy:  0.555
+Actor 15 result: 0.555000
+Accuracy:  0.635
+Actor 16 result: 0.635000
+Accuracy:  0.55
+Actor 17 result: 0.550000
+Accuracy:  0.535
+Actor 18 result: 0.535000
+Accuracy:  0.56
+Actor 19 result: 0.560000
+Accuracy:  0.72
+Actor 20 result: 0.720000
+Accuracy:  0.63
+Actor 21 result: 0.630000
+Accuracy:  0.54
+Actor 22 result: 0.540000
+Accuracy:  0.57
+Actor 23 result: 0.570000
+Accuracy:  0.51
+Actor 24 result: 0.510000
+Total: 0.583000
