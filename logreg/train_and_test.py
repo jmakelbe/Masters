@@ -13,7 +13,7 @@ homePath = '/Users/July/Documents/Dropbox/OxfordMSc/Thesis/code/'
 
 actors = 1
 
-crossvalid = False
+crossvalid = True
 regular = False
 
 # These three functions are helpers for the BFGS optimiser
@@ -126,25 +126,12 @@ def concat(folder, test):
     path = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":folder, "num":actor}
     data = np.genfromtxt(path, delimiter=' ')
     if test:
-      data = data[300:400, :]
+      data = data[400:, :]
     else:
-      data = data[:300, :]
+      data = data[:400, :]
     full = np.append(full, data[:,:-1], axis=0)
   return full
 
-def getOncActorTrainData():
-  coverpath = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":"fb4m-500-cover", "num":1}
-  coverdata = np.genfromtxt(coverpath, delimiter=' ')
-  coverdata = coverdata[:300, :-1]
-
-  stegpath = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":"fb4m-500-stego-0.05", "num":1}
-  stegdata = np.genfromtxt(stegpath, delimiter=' ')
-  stegdata = stegdata[:300, :-1]
-
-  coverdata = addLabels(coverdata, False)
-  stegdata = addLabels(stegdata, True)
-
-  return np.append(coverdata, stegdata, axis = 0)
 
 
 def Train(data, iters, eta, threshold, regularisation, cross, bfgs, payload):

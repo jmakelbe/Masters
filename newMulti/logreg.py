@@ -101,11 +101,11 @@ def multi_objective(W, D, r1, r2):
     return sum(res)
 
 
-def grad_multi_objective(W, D, r1, r2):
+def grad_multi_objective(W, D, r1, r2, regular):
     W = np.reshape(W, (D.shape[0], W.shape[0]/D.shape[0]))
-    res1 = grad_likelihood(W, D)
-    res2 = grad_regularisation(W, r1, r2)
-    res = np.add(res1, res2)
+    res = grad_likelihood(W, D)
+    if regular:
+      res = np.add(res, grad_regularisation(W, r1, r2))
     res = np.reshape(res, (res.shape[0]*res.shape[1]))
     return res
 

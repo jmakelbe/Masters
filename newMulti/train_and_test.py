@@ -5,6 +5,7 @@ import numpy as np
 import scipy.optimize as op
 import datetime
 
+from util import *
 from logreg import *
 #multitask
 homePath = '/Users/July/Documents/Dropbox/OxfordMSc/Thesis/code/'
@@ -12,8 +13,8 @@ homePath = '/Users/July/Documents/Dropbox/OxfordMSc/Thesis/code/'
 
 actors = 5
 
-crossvalid = False
-regular = False
+crossvalid = True
+regular = True
 
 # These three functions are helpers for the BFGS optimiser
 last_func=0
@@ -24,12 +25,12 @@ arrays_of_std=0
 def function(W, D, r1, r2): 
   global last_func
   last_func = multi_objective(W, D, r1, r2)
-  last_func = last_func + regularisation(W, r1, r2)
+  if regular:
+    last_func = last_func + regularisation(W, r1, r2)
   return last_func
 
 def function_grad(W, D, r1, r2):
-  res = grad_multi_objective(W, D, r1, r2)
-  return res
+  return grad_multi_objective(W, D, r1, r2, regular)
 
 def report(w):
   global last_func
@@ -71,15 +72,15 @@ def normalize(data):
 
 
 def getTrainingDataFB():
-  data = np.empty([actors, 600, 275])
+  data = np.empty([actors, 800, 275])
   for actor in range(0, actors):
     coverpath = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":"fb4m-500-cover", "num":actor+1}
     coverdata = np.genfromtxt(coverpath, delimiter=' ')
-    coverdata = coverdata[:300, :-1]
+    coverdata = coverdata[:400, :-1]
 
     stegpath = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":"fb4m-500-stego-0.05", "num":actor+1}
     stegdata = np.genfromtxt(stegpath, delimiter=' ')
-    stegdata = stegdata[:300, :-1]
+    stegdata = stegdata[:400, :-1]
 
     coverdata = addLabels(coverdata, False)
     stegdata = addLabels(stegdata, True)
@@ -92,11 +93,11 @@ def getTestingDataFB():
   for actor in range(0, actors):
     coverpath = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":"fb4m-500-cover", "num":actor+1}
     coverdata = np.genfromtxt(coverpath, delimiter=' ')
-    coverdata = coverdata[300:400, :-1]
+    coverdata = coverdata[400:500, :-1]
 
     stegpath = '%(path)sdatasets/%(fol)s/actor%(num)04d/data/merged.fea' %{"path":homePath, "fol":"fb4m-500-stego-0.05", "num":actor+1}
     stegdata = np.genfromtxt(stegpath, delimiter=' ')
-    stegdata = stegdata[300:400, :-1]
+    stegdata = stegdata[400:500, :-1]
 
     coverdata = addLabels(coverdata, False)
     stegdata = addLabels(stegdata, True)
@@ -164,24 +165,52 @@ def logResults(start, datashape, accuracies, end, comment, iters, threshold, reg
   fout.write('    regularisation2: %(num)f \n' %{"num":regularisation2})
   fout.write('    threshold: %(num)e \n' %{"num":threshold})
   fout.write('    payload: %(num)f \n' %{"num":payload})
-  fout.write('\nAccuracies:\n')
-  for i in range (0, len(accuracies)):
-    fout.write(' Actor %(num1)d: %(num2)f\n' %{"num1":i, "num2":accuracies[i]})
+#  fout.write('\nAccuracies:\n')
+#  for i in range (0, len(accuracies)):
+#    fout.write(' Actor %(num1)d: %(num2)f\n' %{"num1":i, "num2":accuracies[i]})
   fout.write("\nComment: \n")
   fout.write('%(num1)d Actors'%{"num1":actors})
   fout.write("\n----------------------------------------------\n")
   fout.close()
 
+def crossvalidate(data, regularisation1, regularisation2, iters, threshold, cross):
+  accuracies=np.zeros(actors)
+  number = cross
+  for i in range (0, number):
+    global iterations
+    global last_func
+    iterations = 0
+    last_func = 0
+    train_data = np.empty([data.shape[0], data.shape[1]*(number-1)/number,data.shape[2]])
+    test_data = np.empty([data.shape[0], data.shape[1]/number,data.shape[2]])
+    for actor in range (0, actors):
+      actordata = data[actor]
+      split = split_data(number, i, actordata)
+      train_data[actor]=split[0]
+      test_data[actor]=split[1]
+    weights = Train(train_data, regularisation1, regularisation2, iters, threshold)
+    accuracies = np.add(accuracies, Test(test_data, weights))
+  accuracies = np.divide(accuracies, number)
+  print "Total Accuracies:"
+  print accuracies
+  return accuracies
+  
+      
+    
     
 # This is the main function for training and testing the logistic 
 # regression model.
-def experiment(iters, threshold, regularisation1, regularisation2):
+def experiment(iters, threshold, regularisation1, regularisation2, cross):
   comment = "Actors"
   start = datetime.datetime.now()
   data = getTrainingDataFB()
-  myw = Train(data, regularisation1, regularisation2, iters, threshold)
-  testData = getTestingDataFB()
-  accuracies = Test(testData, myw)
+  accuracies = 0.0
+  if crossvalid:
+    accuracies = crossvalidate(data, regularisation1, regularisation2, iters, threshold, cross)
+  else:
+    myw = Train(data, regularisation1, regularisation2, iters, threshold)
+    testData = getTestingDataFB()
+    accuracies = Test(testData, myw)
   end = datetime.datetime.now()
   logResults(start, data.shape, accuracies, end, comment,iters, threshold, regularisation1, regularisation2, 0.05)
 
@@ -204,9 +233,9 @@ def main(argv=None):
   regularisation1 =1e1
   regularisation2 = 1e1
   threshold = 1e1
-
+  cross = 5
   # run our experiment function
-  experiment(iters, threshold, regularisation1, regularisation2)
+  experiment(iters, threshold, regularisation1, regularisation2, cross)
 
 
 
